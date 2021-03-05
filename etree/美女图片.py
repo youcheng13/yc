@@ -2,13 +2,14 @@
 import requests
 from lxml import etree
 import os
+import time
 if __name__ == '__main__':
 
     headers = {
         'User-Agent' : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36'
     }
     # url = 'http://pic.netbian.com/4kmeinv/index_%d.html'
-    
+    start_time = time.time()#设置开始时间
     for a in range(2,5):#a表示2-5页的图片地址
         urls =f'http://pic.netbian.com/4kmeinv/index_{a}.html' 
         di_list = requests.get(url=urls,headers=headers).text
@@ -28,3 +29,5 @@ if __name__ == '__main__':
 
             with open(img_path,'wb') as f:
                 f.write(img_data)
+    end_time = time.time()#设置结束时间
+    print(end_time-start_time)#计算总耗时
