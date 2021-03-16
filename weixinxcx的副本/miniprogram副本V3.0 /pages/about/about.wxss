@@ -1,0 +1,19 @@
+.container {
+  background-color: #eee;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.aaa {
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-banner {
+  width: 600rpx;
+  height: 467rpx;
+}

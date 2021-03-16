@@ -1,0 +1,19 @@
+<view class="container">
+  <image class="about-banner" src="/images/1.jpg"></image>
+  <text>总裁大班台</text>
+  <image class="about-banner" src="/images/3.jpg"></image>
+  <text>经理班台</text>
+  <image class="about-banner" src="/images/4.png"></image>
+  <text>会议桌 </text>
+  <image class="about-banner" src="/images/6.jpg"></image>
+  <image class="about-banner" src="/images/7.jpg"></image>
+  <text>办公区</text>
+</view>
+
+<view class="aaa">
+  <text>联系人:符先生 电话:155-9596-9698（微信同号）</text>
+  <text>E-mail：youcheng13@126.com</text>
+  <text>地址:海口市椰海大道喜盈门A区4楼格斯图办公家具</text>
+</view>
+
+<button bindtap="dufault">点击</button>
