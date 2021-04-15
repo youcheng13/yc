@@ -1,4 +1,5 @@
 import time
+import requests
 #导入线程池模块对应的类
 from multiprocessing.dummy import Pool
 
@@ -9,15 +10,13 @@ for a in range(2,5):
     list.append(urls)
 print(list)
 
-
-
 def get_page(str):
     response = requests.get(url=list)
 
 # name_list =['xiazai','aa','bb','cc']
 #实例化一个线程池对象
 pool = Pool(4)
-#将列表中每个列表元素传递给ge_page进行处理
+# 将列表中每个列表元素传递给get_page进行处理
 pool.map(list)
 
 end_time = time.time()
